@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+body{
+	height: 3000px;
+	background-color: #FFDD99;
+}
+
+body h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5em;
+}
+body h2{
+	margin-top: 15px;
+	font-family: 'Playfair Display', serif;
+	font-size: 3em;
+}
+body p{
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.navButton{
+	height: 70px;
+	width: 150px;
+	border-radius: 8px;
+	background-color: #1A1A1A ;
+	color: white;
+	margin: 10px;
+	font-size: 15px;
+
+}
+.navButton:hover{
+	cursor: pointer;
+}
+
+body button{
+  color: black;
+  background:  none;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 1.5em;
+  height: auto;
+  margin: 10px;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); 
+}
+body button::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .3s; }
+
+
+body button:hover{
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+  cursor: pointer;
+}
+
+
+.text-promo {
+  color: white;
+  background-color: black;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-size: 1.5em;
+  height: auto; }
+
+.nav {
+  background-color: #FFDD99;
+   display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px black; }
+
+
+.nav__logo {
+  font-size: 5em;
+  font-weight: 900;
+  text-decoration: none;
+  color: #414141; }
+
+
+nav h1{
+	text-transform: uppercase;
+}
+
+ul{
+	margin: 20px;
+	list-style-type: circle;
+}
+
+li{
+	font-family: 'Playfair Display', serif;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: justify;
+  	margin: 15px;
+    border-bottom:solid 1px black; ;
+}
+
+
+
